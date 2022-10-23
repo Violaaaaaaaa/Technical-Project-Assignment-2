@@ -611,3 +611,15 @@ function showMovies(keyword = '') {
 getMovies()
 showMovies()
 }
+
+let searchButton = document.getElementById('search-btn');
+searchButton.onclick = onSearch;
+
+function onSearch() {
+  //console.log('Hello')
+
+let input = document.getElementById('searchs')
+let keywords = input.value
+//console.log(keywords)
+showMovies(keywords)
+}
